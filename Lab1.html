@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<table border = "2">
+	<thead>
+	 <tr>
+		<th colspan = "3">About--113306078</th>
+	 </tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td rowspan = "3">
+			<img src = "C:\Users\user\Desktop\nccu\me.jpg" width = "90px" height = "120px" alt = "personal photo">
+			<p>personal photo</p>
+		</td>
+		<td colspan="2">
+			<label>Name:
+				<input type="text" name="name" size = "25" maxlength="30">
+			</label></p>
+			<form>Gender:
+				<input type="radio" name="gender" value = "male">Male
+				<input type="radio" name="gender" value = "female">Female
+				<input type="radio" name="gender" value = "other">Other
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<form action="/action_page.php">Country:
+				<select name = "country">
+					<option value="taipei">Taipei</option>
+					<option value="taoyuan">Taoyuan</option>
+					<option value="taichung">Taichung</option>
+					<option value="tainan">Tainan</option>
+				</select>
+			</form>
+		</td>
+		<td>
+			<form action="/action_page.php">Birthday:
+				<label for="birthday">Birthday:</label>
+
+				<input type="date" id="birthday" name="birthday"
+				value="2006-01-01" min="1990-01-01" max="2024-12-31">
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<label>Email:
+				<input type="text" name="email" size="25" maxlength="30">
+			</label>
+		</td>
+	</tr>
+	<tr>
+		<td>Hobby</td>
+		<td colspan="2">
+			<form action="/action_page.php" method="get">
+				<input type="checkbox" name="hobby" value="Swimming">Swimming
+				<input type="checkbox" name="hobby" value="Volleyball">Volleyball
+				<input type="checkbox" name="hobby" value="Movie">Movie
+				<input type="checkbox" name="hobby" value="Game">Game
+				<input type="checkbox" name="hobby" value="Sleep">Sleep
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td>Skill</td>
+		<td colspan="2">
+			<form action="/action_page.php" method="get">
+				<input type="checkbox" name="skill" value="java">Java
+				<input type="checkbox" name="skill" value="html">HTML
+				<input type="checkbox" name="skill" value="python">Python
+				<input type="checkbox" name="skill" value="microsoft office">Microsoft Office
+				<input type="checkbox" name="skill" value="premiere">Premiere
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td>Say Something</td>
+		<td colspan="2">
+			<textarea rows="4" cols="50" placeholder="Say something here." required>
+			</textarea>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="submit" value="提交">
+			<input type="reset" value="重設">
+		</td>
+	</tr>
+	</tbody>
+
+
+</body>
+</html>
